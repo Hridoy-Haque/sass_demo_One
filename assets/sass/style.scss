@@ -1,0 +1,10 @@
+$them-color : red;
+$pt : 20px;
+$pb : 20px;
+$mt : 20px;
+$mb : 20px;
+
+body{
+    background-color: $them-color;
+    padding: $pt $pb;
+}

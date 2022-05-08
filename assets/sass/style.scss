@@ -1,53 +1,8 @@
-@import "reset";
-@import "color";
-@import "mixins";
-@import "extend";
+/*========= BASE FILE IMPORT ===========*/
+@import "base/all";
 
-body{
-    @extend %common ;
-}
-.row{
-    @extend %flex;
-}
-header{
-    width:calc(100% - 200px);
-    margin: auto;
-    .row{
-        justify-content: space-between;
-        align-items: center;
-        .logo{
-            @extend %col-2;
-            a{
-                img{
-                    display: block;
-                    max-width: 100%;
-                }
-            }
-        }
-        nav{
-            @extend %col-8;
-            ul {
-                @extend %flex;
-                justify-content: center;
-                li{
-                    a{
-                        display: block;
-                        @extend %common ;
-                        padding: 10px 30px;
-                        font-size: 20px;
-                        color: #000;
-                    }
-                }
-            }
-        }
-        .contact{
-            @extend %col-2;
-            a{
-                background-color:  $color;
-                color : #fff;
-                padding: 15px 40px;
-                border-radius: 5px;
-            }
-        }
-    }
-}
+/*========= BASE FILE IMPORT ===========*/
+@import "utilitis/all";
+
+/*========= BASE FILE IMPORT ===========*/
+@import "layout/all";

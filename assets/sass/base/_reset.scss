@@ -39,6 +39,22 @@ ul{
     }
 }
 
+/* padding and margin */
+@for $i from 1 through 10{
+    .pt-#{$i * 10}{
+        padding-top: 10px * $i;
+    }
+    .pb-#{$i * 10}{
+        padding-bottom: 10px * $i;
+    }
+    .mt-#{$i * 10}{
+        margin-top: 10px * $i;
+    }
+    .mb-#{$i * 10}{
+        margin-bottom: 10px * $i;
+    }
+
+}
 
 /* button CSS*/
 .btn {
